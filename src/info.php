@@ -3,7 +3,7 @@
 	/**
 	*  @module global
 	*/
-	use Logger\Logger;
+	use Canteen\Logger\Logger;
 	
 	/**
 	*  Convenience function for giving debug info statements. 

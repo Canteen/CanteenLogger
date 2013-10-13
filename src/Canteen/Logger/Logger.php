@@ -1,9 +1,9 @@
 <?php
 
 /**
-*  @module Canteen/Logger
+*  @module Canteen\Logger
 */
-namespace Logger
+namespace Canteen\Logger
 {	
 	/**
 	*  Handle the log statements that get outputted when we're running debug mode.
