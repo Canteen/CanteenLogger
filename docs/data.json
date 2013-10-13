@@ -2,7 +2,7 @@
     "project": {
         "name": "Canteen Logger API",
         "description": "Trace output for PHP that can be injected on an HTML page",
-        "version": "${version}",
+        "version": "1.0.0",
         "logo": ""
     },
     "files": {
