@@ -3,7 +3,7 @@
 	"description" : "Using PHP to trace and debug code on a website",
 	"version" : "1.0.0",
     "type": "library",
-	"keywords": ["html5", "markup", "document", "html", "tags"],
+	"keywords": ["debug", "output", "trace", "utilities"],
     "license": "MIT",
 	"homepage" : "http://github.com/Canteen/CanteenLogger",
 	"time": "2013-10-12",
