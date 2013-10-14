@@ -1,4 +1,4 @@
-#CanteenLogger
+#Canteen Logger
 
 A visual display of logs from within your PHP code. Add this to any dynamic PHP page to see a list of all your debug, trace, info, warning, and error statements.
 
