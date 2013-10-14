@@ -2,7 +2,21 @@
 
 A visual display of logs from within your PHP code. Add this to any dynamic PHP page to see a list of all your debug, trace, info, warning, and error statements.
 
-##Installing
+##Installation
+
+Install is available using [Composer](http://getcomposer.org).
+
+```bash
+composer require canteen/logger dev-master
+```
+
+Including using the Composer autoloader in your index.
+
+```php
+require 'vendor/autoload.php';
+```
+
+##Setup
 
 ```php
 use Canteen\Logger;
