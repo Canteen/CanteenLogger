@@ -1,6 +1,6 @@
 #Canteen Logger
 
-A visual display of logs from within your PHP code. Add this to any dynamic PHP page to see a list of all your debug, trace, info, warning, and error statements.
+A visual display of logs from within your PHP code. Add this to any dynamic PHP page to see a list of all your debug, trace, info, warning, and error statements. For documentation of the codebase, please see [Canteen Logger docs](http://canteen.github.io/CanteenLogger/).
 
 ##Installation
 
@@ -49,3 +49,16 @@ There are five different log levels function that come with Logger. These are in
 + `warning()`
 + `error()`
 
+###Rebuild Documentation
+
+This library is auto-documented using [YUIDoc](http://yui.github.io/yuidoc/). To install YUIDoc, run `sudo npm install yuidocjs`. Also, this requires the project [CanteenTheme](http://github.com/Canteen/CanteenTheme) be checked-out along-side this repository. To rebuild the docs, run the ant task from the command-line. 
+
+```bash
+ant docs
+```
+
+##License##
+
+Copyright (c) 2013 [Matt Karl](http://github.com/bigtimebuddy)
+
+Released under the MIT License.
