@@ -1,0 +1,40 @@
+{
+    "name": "canteen/logger",
+	"description" : "Using PHP to trace and debug code on a website",
+	"version" : "1.0.0",
+    "type": "library",
+	"keywords": ["debug", "output", "trace", "utilities"],
+    "license": "MIT",
+	"homepage" : "http://github.com/Canteen/CanteenLogger",
+	"time": "2013-10-12",
+	"authors": [
+        {
+            "name": "Matt Karl",
+            "email": "matt@mattkarl.com",
+            "homepage": "http://github.com/bigtimebuddy",
+            "role": "Developer"
+        }
+	],
+    "autoload": {
+        "psr-0": {
+			"Canteen" : "src/"
+		},
+		"files": [
+			"src/debug.php",
+			"src/error.php",
+			"src/info.php",
+			"src/trace.php",
+			"src/warning.php"
+		]
+    },
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"minimum-stability": "stable",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/Canteen/CanteenLogger"
+		}
+	]
+}
