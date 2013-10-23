@@ -14,7 +14,7 @@ YUI.add("yuidoc-meta", function(Y) {
     ],
     "allModules": [
         {
-            "displayName": "Canteen/Logger",
+            "displayName": "Canteen\\Logger",
             "name": "Canteen_Logger"
         },
         {

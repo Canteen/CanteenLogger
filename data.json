@@ -6,8 +6,19 @@
         "logo": ""
     },
     "files": {
-        "src/Functions/debug.php": {
-            "name": "src/Functions/debug.php",
+        "src/Canteen/Logger/Logger.php": {
+            "name": "src/Canteen/Logger/Logger.php",
+            "modules": {
+                "Canteen\\Logger": 1
+            },
+            "classes": {
+                "Logger": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/debug.php": {
+            "name": "src/debug.php",
             "modules": {
                 "global": 1
             },
@@ -17,8 +28,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src/Functions/error.php": {
-            "name": "src/Functions/error.php",
+        "src/error.php": {
+            "name": "src/error.php",
             "modules": {},
             "classes": {
                 "error": 1
@@ -26,8 +37,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src/Functions/info.php": {
-            "name": "src/Functions/info.php",
+        "src/info.php": {
+            "name": "src/info.php",
             "modules": {},
             "classes": {
                 "info": 1
@@ -35,8 +46,8 @@
             "fors": {},
             "namespaces": {}
         },
-        "src/Functions/trace.php": {
-            "name": "src/Functions/trace.php",
+        "src/trace.php": {
+            "name": "src/trace.php",
             "modules": {},
             "classes": {
                 "trace": 1
@@ -44,28 +55,29 @@
             "fors": {},
             "namespaces": {}
         },
-        "src/Functions/warning.php": {
-            "name": "src/Functions/warning.php",
+        "src/warning.php": {
+            "name": "src/warning.php",
             "modules": {},
             "classes": {
                 "warning": 1
             },
             "fors": {},
             "namespaces": {}
-        },
-        "src/Logger.php": {
-            "name": "src/Logger.php",
-            "modules": {
-                "Canteen/Logger": 1
-            },
+        }
+    },
+    "modules": {
+        "Canteen\\Logger": {
+            "name": "Canteen\\Logger",
+            "submodules": {},
             "classes": {
                 "Logger": 1
             },
             "fors": {},
-            "namespaces": {}
-        }
-    },
-    "modules": {
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/Canteen/Logger/Logger.php",
+            "line": 8
+        },
         "global": {
             "name": "global",
             "submodules": {},
@@ -79,23 +91,25 @@
             "fors": {},
             "namespaces": {},
             "tag": "module",
-            "file": "src/Functions/warning.php",
-            "line": 8
-        },
-        "Canteen/Logger": {
-            "name": "Canteen/Logger",
-            "submodules": {},
-            "classes": {
-                "Logger": 1
-            },
-            "fors": {},
-            "namespaces": {},
-            "tag": "module",
-            "file": "src/Logger.php",
+            "file": "src/warning.php",
             "line": 8
         }
     },
     "classes": {
+        "Logger": {
+            "name": "Logger",
+            "shortname": "Logger",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Canteen\\Logger",
+            "namespace": "",
+            "file": "src/Canteen/Logger/Logger.php",
+            "line": 8,
+            "description": "Handle the log statements that get outputted when we're running debug mode.\nLocated in the namespace __Logger__."
+        },
         "debug": {
             "name": "debug",
             "shortname": "debug",
@@ -106,7 +120,7 @@
             "extension_for": [],
             "module": "global",
             "namespace": "",
-            "file": "src/Functions/debug.php",
+            "file": "src/debug.php",
             "line": 8,
             "description": "Convenience function for giving debug trace statements.\n __This is a global function.__\n\n\tdebug('Checking something out!');",
             "is_constructor": 1,
@@ -128,7 +142,7 @@
             "extension_for": [],
             "module": "global",
             "namespace": "",
-            "file": "src/Functions/error.php",
+            "file": "src/error.php",
             "line": 8,
             "description": "Convenience function for giving debug error statements.\n __This is a global function.__\n\n\terror('Something bad happened!');",
             "is_constructor": 1,
@@ -150,7 +164,7 @@
             "extension_for": [],
             "module": "global",
             "namespace": "",
-            "file": "src/Functions/info.php",
+            "file": "src/info.php",
             "line": 8,
             "description": "Convenience function for giving debug info statements. \n __This is a global function.__\n\n\tinfo('You might want to know this!');",
             "is_constructor": 1,
@@ -172,7 +186,7 @@
             "extension_for": [],
             "module": "global",
             "namespace": "",
-            "file": "src/Functions/trace.php",
+            "file": "src/trace.php",
             "line": 8,
             "description": "Convenience function for giving debug trace statements.  \n__This is a global function.__\n\n\ttrace('Point reached in code!');",
             "is_constructor": 1,
@@ -201,7 +215,7 @@
             "extension_for": [],
             "module": "global",
             "namespace": "",
-            "file": "src/Functions/warning.php",
+            "file": "src/warning.php",
             "line": 8,
             "description": "Convenience function for giving debug warning statements. \n__This is a global function.__\n\n\twarning('Something serious happened');",
             "is_constructor": 1,
@@ -212,25 +226,11 @@
                     "type": "Mixed"
                 }
             ]
-        },
-        "Logger": {
-            "name": "Logger",
-            "shortname": "Logger",
-            "classitems": [],
-            "plugins": [],
-            "extensions": [],
-            "plugin_for": [],
-            "extension_for": [],
-            "module": "Canteen/Logger",
-            "namespace": "",
-            "file": "src/Logger.php",
-            "line": 8,
-            "description": "Handle the log statements that get outputted when we're running debug mode.\nLocated in the namespace __Logger__."
         }
     },
     "classitems": [
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 15,
             "description": "The output string to show",
             "itemtype": "property",
@@ -239,10 +239,10 @@
             "access": "protected",
             "tagname": "",
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 22,
             "description": "The minimum level show",
             "itemtype": "property",
@@ -251,10 +251,10 @@
             "access": "protected",
             "tagname": "",
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 29,
             "description": "The singleton instance",
             "itemtype": "property",
@@ -264,10 +264,10 @@
             "tagname": "",
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 37,
             "description": "If we want to enable this",
             "itemtype": "property",
@@ -276,10 +276,10 @@
             "access": "public",
             "tagname": "",
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 44,
             "description": "The most general log level, for general message",
             "itemtype": "property",
@@ -288,10 +288,10 @@
             "final": 1,
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 52,
             "description": "For logging out info messages",
             "itemtype": "property",
@@ -300,10 +300,10 @@
             "final": 1,
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 60,
             "description": "For logging out debug messages",
             "itemtype": "property",
@@ -312,10 +312,10 @@
             "final": 1,
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 68,
             "description": "For logging out warning messages",
             "itemtype": "property",
@@ -324,10 +324,10 @@
             "final": 1,
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 76,
             "description": "For logging out error messages",
             "itemtype": "property",
@@ -336,17 +336,17 @@
             "final": 1,
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 84,
             "description": "Build the Logger object",
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 101,
             "description": "Handle asserts from PHP",
             "itemtype": "method",
@@ -369,20 +369,20 @@
                 }
             ],
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 113,
             "description": "Initialize the singleton for Logger",
             "itemtype": "method",
             "name": "init",
             "static": 1,
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 127,
             "description": "Get the single instance of Logger",
             "itemtype": "method",
@@ -393,10 +393,10 @@
                 "type": "Logger"
             },
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 138,
             "description": "Get the logger body content",
             "itemtype": "method",
@@ -406,10 +406,10 @@
                 "type": "String"
             },
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 160,
             "description": "Set the minimum log level required to show",
             "itemtype": "method",
@@ -422,10 +422,10 @@
                 }
             ],
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Logger.php",
+            "file": "src/Canteen/Logger/Logger.php",
             "line": 170,
             "description": "The generic log statement",
             "itemtype": "method",
@@ -452,13 +452,13 @@
                 }
             ],
             "class": "Logger",
-            "module": "Canteen/Logger"
+            "module": "Canteen\\Logger"
         }
     ],
     "warnings": [
         {
             "message": "Missing item type\nBuild the Logger object",
-            "line": " src/Logger.php:84"
+            "line": " src/Canteen/Logger/Logger.php:84"
         }
     ]
 }
