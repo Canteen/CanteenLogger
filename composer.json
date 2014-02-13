@@ -1,7 +1,7 @@
 {
     "name": "canteen/logger",
 	"description" : "Using PHP to trace and debug code on a website",
-	"version" : "1.0.0",
+	"version" : "1.0.1",
     "type": "library",
 	"keywords": ["debug", "output", "trace", "utilities"],
     "license": "MIT",
