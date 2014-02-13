@@ -2,12 +2,12 @@
     "project": {
         "name": "Canteen Logger API",
         "description": "Trace output for PHP that can be injected on an HTML page",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "logo": ""
     },
     "files": {
-        "src/Canteen/Logger/Logger.php": {
-            "name": "src/Canteen/Logger/Logger.php",
+        "src/Logger.php": {
+            "name": "src/Logger.php",
             "modules": {
                 "Canteen\\Logger": 1
             },
@@ -75,7 +75,7 @@
             "fors": {},
             "namespaces": {},
             "tag": "module",
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 8
         },
         "global": {
@@ -106,7 +106,7 @@
             "extension_for": [],
             "module": "Canteen\\Logger",
             "namespace": "",
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 8,
             "description": "Handle the log statements that get outputted when we're running debug mode.\nLocated in the namespace __Logger__."
         },
@@ -230,7 +230,7 @@
     },
     "classitems": [
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 15,
             "description": "The output string to show",
             "itemtype": "property",
@@ -242,7 +242,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 22,
             "description": "The minimum level show",
             "itemtype": "property",
@@ -254,7 +254,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 29,
             "description": "The singleton instance",
             "itemtype": "property",
@@ -267,7 +267,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 37,
             "description": "If we want to enable this",
             "itemtype": "property",
@@ -279,7 +279,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 44,
             "description": "The most general log level, for general message",
             "itemtype": "property",
@@ -291,7 +291,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 52,
             "description": "For logging out info messages",
             "itemtype": "property",
@@ -303,7 +303,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 60,
             "description": "For logging out debug messages",
             "itemtype": "property",
@@ -315,7 +315,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 68,
             "description": "For logging out warning messages",
             "itemtype": "property",
@@ -327,7 +327,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 76,
             "description": "For logging out error messages",
             "itemtype": "property",
@@ -339,14 +339,14 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 84,
             "description": "Build the Logger object",
             "class": "Logger",
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 101,
             "description": "Handle asserts from PHP",
             "itemtype": "method",
@@ -372,7 +372,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 113,
             "description": "Initialize the singleton for Logger",
             "itemtype": "method",
@@ -382,7 +382,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 127,
             "description": "Get the single instance of Logger",
             "itemtype": "method",
@@ -396,7 +396,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 138,
             "description": "Get the logger body content",
             "itemtype": "method",
@@ -409,7 +409,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 160,
             "description": "Set the minimum log level required to show",
             "itemtype": "method",
@@ -425,7 +425,7 @@
             "module": "Canteen\\Logger"
         },
         {
-            "file": "src/Canteen/Logger/Logger.php",
+            "file": "src/Logger.php",
             "line": 170,
             "description": "The generic log statement",
             "itemtype": "method",
@@ -458,7 +458,7 @@
     "warnings": [
         {
             "message": "Missing item type\nBuild the Logger object",
-            "line": " src/Canteen/Logger/Logger.php:84"
+            "line": " src/Logger.php:84"
         }
     ]
 }
